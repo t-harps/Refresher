@@ -1,0 +1,9 @@
+<p id="notice"><%= notice %></p>
+
+<div >
+  <h1>Videos featuring <%= @skier.name %></h1>
+  <% @skier.videos.each do |video| %>
+    <%= render video %>
+  <% end %>
+</div>
+

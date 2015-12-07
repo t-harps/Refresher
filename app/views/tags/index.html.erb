@@ -1,0 +1,6 @@
+<p id="notice"><%= notice %></p>
+
+<% @tags.each do |tag| %>
+  <%= link_to tag.name, tag %>
+  <br>
+<% end %>

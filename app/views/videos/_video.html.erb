@@ -1,0 +1,19 @@
+<div class="blog-post">
+  	
+    <div class="post-title"><h2><%= video.name %></h2> 
+    <%= link_to "Watch", video.link, :target => "_blank" %> | 
+    <%= link_to 'Edit', edit_video_path(video) %> | 
+	  <%= link_to 'Delete', video, method: :delete, data: { confirm: 'Are you sure?' } %>
+    </div>
+    <p>
+    <strong>Featuring: </strong>
+  	<% video.skiers.each do |skier| %>
+      <%= link_to skier.name, skier_path(skier) %> - 
+    <% end %>
+    <br>
+    <strong>Tags: </strong>
+    <% video.tags.each do |tag| %>
+      <%= link_to tag.name, tag_path(tag) %> - 
+    <% end %>
+    </p>
+</div>

@@ -1,0 +1,8 @@
+<p id="notice"><%= notice %></p>
+
+<div >
+  <h1>Videos tagged with <%= @tag.name %></h1>
+  <% @tag.videos.each do |video| %>
+    <%= render video %>
+  <% end %>
+</div>
