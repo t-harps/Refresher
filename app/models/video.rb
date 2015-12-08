@@ -17,7 +17,7 @@ class Video < ActiveRecord::Base
 	end
 
 	def skier_list=(skiers_string)
-		skier_names = skiers_string.split(",").collect{|s| s.strip}.uniq
+		skier_names = skiers_string.split(",").collect{|s| s.strip.upcase}.uniq
 	  new_or_found_skiers = skier_names.collect { |name| Skier.find_or_create_by(name: name) }
 	  self.skiers = new_or_found_skiers
 	end
