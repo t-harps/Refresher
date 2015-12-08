@@ -4,6 +4,12 @@
       <a class="blog-nav-item" href='/'>Home</a>
       <a class="blog-nav-item" href="/skiers">Skiers</a>
       <a class="blog-nav-item" href="/tags">Tags</a>
+      <div class='blog-search'>
+        <%= form_tag(root_path, method: "get") do %>
+    	    <%= text_field_tag :search, params[:search], placeholder: "Search by skier or tag" %>
+    	    <%= submit_tag("Search", :name => nil) %>
+  	    <% end %>
+  	  </div>
     </nav>
   </div>
 </div>

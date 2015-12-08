@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
-
-<% @tags.each do |tag| %>
-  <%= link_to tag.name, tag %>
-  <br>
-<% end %>
+<div class='tags'>
+	<% @tags.each do |tag| %>
+	  <div class='button'><%= link_to tag.name, tag %></div>
+	<% end %>
+</div>

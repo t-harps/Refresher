@@ -4,6 +4,14 @@ class Video < ActiveRecord::Base
 	has_many :tags, through: :taggings
 	has_many :skiers, through: :featurings
 
+  def self.search(search)
+  	if search
+  		joins(:tags, :skiers).where('tags.name LIKE ? or skiers.name LIKE ?', "%#{search}%", "%#{search}%").uniq
+  	else
+  		find(:all)
+  	end
+  end
+
 	def skier_list
  		skiers.join(", ")
 	end

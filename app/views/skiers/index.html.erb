@@ -1,6 +1,7 @@
 <p id="notice"><%= notice %></p>
 
-<% @skiers.each do |skier| %>
-  <%= link_to skier.name, skier %>
-  <br>
-<% end %>
+<div class='tags'>
+	<% @skiers.each do |skier| %>
+	  <div class='button'><%= link_to skier.name, skier %></div>
+	<% end %>
+</div>

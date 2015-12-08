@@ -13,23 +13,23 @@
 
   <div class="field">
     <%= f.label :name %><br>
-    <%= f.text_field :name %>
+    <%= f.text_field :name, :size=>"50" %>
   </div>
   <div class="field">
     <%= f.label :rank %><br>
-    <%= f.number_field :rank %>
+    <%= f.number_field :rank, :size=>"50" %>
   </div>
   <div class="field">
     <%= f.label :link %><br>
-    <%= f.text_field :link %>
+    <%= f.text_field :link, :size=>"50" %>
   </div>
   <div class="field">
     <%= f.label :skier_list %><br />
-    <%= f.text_field :skier_list %><br />
+    <%= f.text_field :skier_list, :size=>"50", placeholder: "Commas between each skier" %><br />
   </div>
   <div class="field">
     <%= f.label :tag_list %><br />
-    <%= f.text_field :tag_list %><br />
+    <%= f.text_field :tag_list, :size=>"50", placeholder: "Commas between each tag"  %><br />
   </div>
 
   <div class="actions">

@@ -15,4 +15,16 @@ video5 = Video.create! :name => 'One of those days', :rank => 5, :link => 'https
 											 :tag_list => 'resort, france, medium'																					 
 video6 = Video.create! :name => 'Reasons Japan Segment', :rank => 6, :link => 'https://www.youtube.com/watch?v=3exKo6RZc98', 
 											 :skier_list => 'JP Auclair, Chris Benchetler',
-											 :tag_list => 'powder, japan, long'											 											 
+											 :tag_list => 'powder, japan, long'	
+video7 = Video.create! :name => 'Bmile - Spring Dayz', :rank => 7, :link => 'http://www.newschoolers.com/videos/watch/771696/Bmile---Spring-Dayz', 
+											 :skier_list => 'Emile Bergeron, Yan Bussieres, Jacob Belanger, Justin DL',
+											 :tag_list => 'park, quebec, medium'	
+video8 = Video.create! :name => 'Real Ski Backcountry 2015 -- Sean Pettit', :rank => 8, :link => 'http://espn.go.com/video/clip?id=13754332', 
+											 :skier_list => 'Sean Pettit',
+											 :tag_list => 'big mountain, pow, medium'
+video9 = Video.create! :name => 'less Jib Line', :rank => 9, :link => 'https://vimeo.com/107303339', 
+											 :skier_list => 'Khai Krepela',
+											 :tag_list => 'park, short, level1, less'	
+video10 = Video.create! :name => 'Adam Delorme Refresh Segment', :rank => 10, :link => 'https://vimeo.com/34818597', 
+											 :skier_list => 'Adam Delorme',
+											 :tag_list => 'park, medium, level1, refresh'												 												 											 										 											 
