@@ -4,7 +4,7 @@ class VideosController < ApplicationController
   # GET /videos
   # GET /videos.json
   def index
-    @videos = Video.all
+    @videos = Video.order(:rank)
     @videos = Video.search(params[:search]) if params[:search].present?
   end
 

@@ -4,7 +4,7 @@ class SkiersController < ApplicationController
   # GET /skiers
   # GET /skiers.json
   def index
-    @skiers = Skier.all
+    @skiers = Skier.order(:name)
   end
 
   # GET /skiers/1

@@ -27,4 +27,7 @@ video9 = Video.create! :name => 'less Jib Line', :rank => 9, :link => 'https://v
 											 :tag_list => 'park, short, level1, less'	
 video10 = Video.create! :name => 'Adam Delorme Refresh Segment', :rank => 10, :link => 'https://vimeo.com/34818597', 
 											 :skier_list => 'Adam Delorme',
-											 :tag_list => 'park, medium, level1, refresh'												 												 											 										 											 
+											 :tag_list => 'park, medium, level1, refresh'	
+video11 = Video.create! :name => 'Armada Snowcieties Ep.2: Sapporo', :rank => 11, :link => 'https://vimeo.com/139421732', 
+											 :skier_list => 'Phil Casabon, Mike Hornbeck, Kim Boberg, Riley Leboe, "Bull" Urata, Daisuke Katano, Maruyama Yohei',
+											 :tag_list => 'urban, pow, armada, japan, long, t-crew'												 											 												 											 										 											 
